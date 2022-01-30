@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+      text-decoration: none;
+      color: rgb(236, 233, 233);
+      border: 1px transparent;
+      transition: 0.8s ease;
+      transform: 3D;
+      padding: 5px 10px ;
+      margin: 10px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+      background-color:rgb(99, 1, 1);
+      color: rgb(216, 215, 223);
+      padding: 10px;
+      margin: 5px;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+    position: center;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  button{
+  
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(45deg, #7e51b9, #8093F1);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+  margin-top: 0px;
+}

@@ -1,0 +1,73 @@
+body{
+    background: #485563;  
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  
+    background: linear-gradient(to right, #29323c, #485563); 
+}
+.logo{
+    float: left;
+    top: 0%;
+    left: 5%;
+    transform: translate(-10% , -45%);
+    
+}
+
+.logo img {
+    height: 15vh;
+    width: 15vh;
+}
+.menu ul {
+        float: right;
+        list-style-type: none;
+        margin: 10px;
+    
+    
+}
+
+.menu ul li {
+        padding-top: 0px;
+        padding-left: 10px;
+        
+        display: inline-flex;
+    
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(12, 11, 11);
+    border: 1px transparent;
+    transition: 0.8s ease;
+    transform: 3D;
+    padding: 5px 10px ;
+}
+
+.menu ul li a:hover{
+    background-color:rgb(99, 1, 1);
+    color: rgb(216, 215, 223);
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu ul li.active a{
+    background-color:rgb(99, 1, 1); 
+    color: rgb(216, 215, 223);
+    padding: 10px;
+    margin: 5px;
+}
+
+h1{
+    position: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(40%,150px);
+    font-size: 50px;
+    font-weight: 900;
+}
+pre{
+    position: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(17%,35%);
+    font-size: 20px;
+    color: beige;
+}

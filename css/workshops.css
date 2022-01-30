@@ -1,0 +1,124 @@
+body{
+    background-image: linear-gradient(rgba(128, 99, 151, 0.705),rgba(175, 130, 102, 0.856)), url(../images/cover1.jpg);
+    background-size: cover;
+	background-position:center;
+    height: 100vh;  
+}
+
+.logo{
+    float: left;
+    top: 5%;
+    left: 5%;
+    transform: translate(5% , 5%);   
+}
+
+.logo img {
+    height: 15vh;
+    width: 15vh;
+}
+.menu ul {
+        float: right;
+        list-style-type: none;
+        margin: 25px;
+        right: 30%;
+        transform: translate(-30%);    
+        
+}
+
+.menu ul li {
+        padding: 10px;
+        
+        display: inline-flex;
+    
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.966);
+    border: 1px transparent;
+    transition: 0.8s ease;
+    transform: 3D;
+    padding: 5px 10px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    background-color:rgb(99, 1, 1);
+    color: rgb(216, 215, 223);
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu ul li.active a{
+    background-color:rgb(99, 1, 1); 
+    color: rgb(236, 232, 236);
+    padding: 10px;
+    margin: 5px;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(120%,-50%);
+}
+.title h1{
+    color: black;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.card-group{
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%,5%);   
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(10, 177, 228, 0.973);
+    transition: 0.3s ;
+    width: 50%;
+    height: 20vh;
+    /*position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,200%);*/
+    margin: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(247, 6, 6, 0.918);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    box-shadow: 0 4px 8px 0 rgba(10, 125, 233, 0.973);
+    transition: 0.3s ;
+    background-color: rgba(255, 255, 255, 0.904);
+  }
+
+  .container:hover{
+    box-shadow: 0 8px 16px 0 rgba(247, 6, 6, 0.918);
+  }
+
+  .container h4 {
+      position: relative;
+      left: 25%;
+  }
+
+  .container button {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    position: relative;
+    left: 30%;
+    font-weight: 700;
+    background-color: black;
+    
+}
+.container button:hover{
+    background-color: rgb(12, 13, 14);
+    color: rgba(175, 20, 14, 0.747);
+}

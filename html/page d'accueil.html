@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/cssaccueil.css" /> <!-- lire le fichier css de la page d'accueil  -->
+  <!--<script type="text/javascript" src="jsaccueil.js" ></script>  lire le fichier javascript de la page d'accueil  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--logo-->
+  <div class="logo">
+    <img src="../images/logo.png" alt="Beyond engineer">
+  </div>
+  <!-- navbar   -->
+  <div>
+    <nav>
+    <ul>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="welcome.html">Login</a></li>
+      <li><a href="page d'accueil.html">Home</a></li>
+      
+    </ul>
+  </nav>
+  </div>
+
+  <!-- Slideshow  -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <img src="../images/Sup'Com.png" id="imgg">
+
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="../images/insat.png" id="imgg">
+
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="../images/polytech.png" id="imgg">
+
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <!-- categories cards  -->
+  <h2 style="text-align: center;">Categories</h2>
+
+  <div id="allcards">
+    
+    <div class="card">
+      <img src="../images/forum.png" alt="forum" style="width:100%">
+      <div class="container">
+        <h4>Forum</h4>
+        <p><button class="button"><a href="../html/forum.html" style="text-decoration: none; color: white;" > See more</a></button></p>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <img src="../images/Workshops.png" alt="workshop" style="width:100%">
+      <div class="container">
+        <h4><b>Workshops</b></h4>
+        <button class="button "><a href="../html/workshops.html" style="text-decoration: none; color: white;" > See more</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/party.png" alt="party" style="width:100%">
+      <div class="container">
+        <h4><b>parties</b></h4>
+        <button class="button "><a href="../html/forum.html" style="text-decoration: none; color: white;" > See more</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/hackathon.png" alt="competitions" style="width:100%">
+      <div class="container">
+        <h4>
+          <b>Hackathon</b>
+        </h4>
+        <button class="button "><a href="../html/forum.html" style="text-decoration: none; color: white;" > See more</a></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Events cards  -->
+ 
+  <h2 style="text-align: center;">This Week</h2>
+
+  <div id="allcards" >
+  <div class="flip-card" >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/nrw.jpg" alt="nrw" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card"  >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/indabaX.jpg" alt="nrw" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>IndabaX</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card" >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/ts.png" alt="nrw" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card"  >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/cstc.jpg" alt="nrw" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="buttonS"><a href="# ">Voir plus</a></div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Contact Us<br></p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+</footer>
+
+
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+    }
+  </script>
+
+</body>
+
+</html>
